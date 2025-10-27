@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprachgesteuerte Lampe</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1, h2 { color: #333; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        ul { list-style-type: square; }
+        video { margin-top: 10px; max-width: 100%; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Sprachgesteuerte Lampe</h1>
+    <p>Dieses Projekt habe ich mit einem Arduino Uno entwickelt. Die Lampe reagiert auf Sprachbefehle und schaltet eine normale Glühbirne über ein Relais an und aus. Das Projekt zeigt die Kombination von Hardware (Arduino, Breadboard, Relais, Schuko-Kabel) und Software für ein IoT-/Smart-Home-Projekt.</p>
+
+    <h2>Verwendete Komponenten</h2>
+    <ul>
+        <li>Arduino Uno Controller</li>
+        <li>Breadboard</li>
+        <li>Relais-Modul</li>
+        <li>Schuko-Kabel</li>
+        <li>Normale Glühbirne</li>
+    </ul>
+
+    <h2>Arduino-Code</h2>
+    <pre>
+#include &lt;Arduino.h&gt;
+
+// Beispielcode für Relaissteuerung
+const int relaisPin = 7; // Pin, an dem das Relais angeschlossen ist
+
+void setup() {
+  pinMode(relaisPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Beispiel: Schalte Relais ein/aus über die serielle Konsole
+  if (Serial.available()) {
+    char command = Serial.read();
+    if (command == '1') {
+      digitalWrite(relaisPin, HIGH); // Lampe an
+    } else if (command == '0') {
+      digitalWrite(relaisPin, LOW);  // Lampe aus
+    }
+  }
+}
+    </pre>
+
+    <h2>Video</h2>
+    <video controls>
+        <source src="lampe.mp4" type="video/mp4">
+        Dein Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <br><br>
+    <a href="../index.html">Zurück zum Portfolio</a>
+</body>
+</html>

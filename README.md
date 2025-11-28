@@ -66,3 +66,4 @@ Uploading VID_20250910_222830.mp4…
 ![IMG_20250926_194155](https://github.com/user-attachments/assets/247e3f64-2240-4862-8902-e47facf1b7ad)
 ![IMG_20250926_194205](https://github.com/user-attachments/assets/8d300b1c-4311-4df0-a88f-1b2aba903390)
 ![IMG_20250926_194208](https://github.com/user-attachments/assets/25b522f5-4eb3-450f-89c6-37cfa0aabfac)
+https://drive.google.com/file/d/1wWliKdfDSrjHWgvU9FzifsNn-rPaRVjC/view?usp=drive_link
